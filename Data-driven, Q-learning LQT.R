@@ -85,7 +85,7 @@ Holdvi <- diag(n+n+m)
 
 #Initialise values of vectors used during data generation 
 x[,1]<- rep(50,n)
-r[,1]<-c(190,180,170,165,160,155)
+r[,1]<-c(155,160,165,170,180,190)
 u[,1] <- sqrt(noisevar)*rnorm(m)
 xaug[,1] <- c(x[,1],r[,1])
 zaug[,1] <- c(xaug[,1],u[,1])
@@ -148,7 +148,7 @@ for(i in 1:n_iter){
 
 #Initialise
 x <- rep(50,n)
-xopt <- c(190,180,170,165,160,155)
+xopt <- c(155,160,165,170,180,190)
 X<-c(x,xopt)
 Kest=Kgain[i,,] #set the control gain equal to the final estimate from training
 layer_number = 100 #how long to simulate the behaviour for
