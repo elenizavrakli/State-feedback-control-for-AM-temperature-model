@@ -52,7 +52,7 @@ x <- rep(50,n)
 xvec <- x #vector storing past states, used to plot the trajectories
 
 #Define optimal state to be tracked
-xopt <- c(190,180,170,165,160,155)
+xopt <- c(155,160,165,170,180,190)
 
 #Define augmented state
 X<-c(x,xopt) 
